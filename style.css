@@ -1,0 +1,161 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+body{
+  background-image: linear-gradient(-45deg, lime, orange);
+}
+
+a{
+  text-decoration: none;
+}
+
+.top-logo-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.logo-img img{
+  width: 100%;
+  border-radius: 50%;
+  max-width: 100px;
+}
+
+.store-title{
+  text-align: center;
+  padding-top: 30px;
+  color: #52402a;
+}
+
+.store-title h1{
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.507);
+  font-size: 2em;
+}
+
+.store-title h2{
+  padding-top: 10px;
+}
+
+.social-medias{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.social-medias img{
+  padding: 10px;
+  width: 30px;
+  filter: invert(1);
+  transition: all 0.2s ease-in-out;
+}
+
+.social-medias img:hover{
+  scale: 115%;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+  flex-direction: column;
+}
+
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 60vw;
+  max-width: 600px;
+  min-width: 300px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  height: auto;
+  border: 3px solid #52402a;
+  margin-bottom: 30px;
+}
+
+.button:hover{
+  scale: 105%;
+}
+
+.button-img {
+  flex-shrink: 0;
+}
+
+.button-img img {
+  width: 50px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  border: 1px solid black;
+  object-fit: contain;
+}
+
+.button-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  font-size: 20px;
+  color: #52402a;
+}
+
+.align-map-items h1{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #52402a;
+}
+
+.align-map-items p{
+  margin-bottom: 20px;
+  color: #52402a;
+  font-weight: bold;
+}
+
+#map-p2{
+  font-size: 0.8em;
+}
+
+#map img{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 100%;
+  width: 570px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.267);
+}
+
+.align-info-map{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.info-map-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 70%;
+  top: 15%;
+  border: 1px solid black;
+  width: 15vw;
+  height: 4vw;
+  border-radius: 50px;
+  background-color: #52402a;
+}
+
+.align-info-map span{
+  text-align: center;
+  color: white;
+  font-size: 1em;
+  font-weight: bolder;
+}
