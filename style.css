@@ -1,161 +1,149 @@
 *{
-  margin: 0;
   padding: 0;
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1em;
 }
 
 body{
-  background-image: linear-gradient(-45deg, lime, orange);
+  background-image: url(images/bg.png);
+  background-repeat: no-repeat;
 }
 
 a{
   text-decoration: none;
 }
 
-.top-logo-center{
+.logo-top{
   display: flex;
+  margin-top: 50px;
   justify-content: center;
-  align-items: center;
-  padding-top: 50px;
 }
 
-.logo-img img{
-  width: 100%;
+.logo-top img{
+  width: 120px;
   border-radius: 50%;
-  max-width: 100px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-.store-title{
+.store-info{
   text-align: center;
-  padding-top: 30px;
-  color: #52402a;
+  margin-top: 10PX;
+  color: white;
+  text-shadow: 0px 0px 5px black;
 }
 
-.store-title h1{
-  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.507);
-  font-size: 2em;
+.store-info h1{
+  font-size: 1.5em;
 }
 
-.store-title h2{
-  padding-top: 10px;
+.store-info h2{
+  font-size: 1em;
+  margin-top: 10px;
 }
 
 .social-medias{
+  margin-top: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 10px;
+  justify-content: center;;
 }
 
 .social-medias img{
-  padding: 10px;
-  width: 30px;
-  filter: invert(1);
+  margin: 5px;
+  width: 35px;
   transition: all 0.2s ease-in-out;
+  filter: invert(1);
 }
 
 .social-medias img:hover{
-  scale: 115%;
+  scale: 1.07;
 }
 
-.buttons {
+.buttons{
   display: flex;
-  align-items: center;
-  padding-top: 80px;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.button {
-  position: relative;
-  display: flex;
-  align-items: center;
+.custom-button{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.267);
+  font-size: 22px;
+  padding: 10px;
+  margin-top: 20px;
   width: 60vw;
   max-width: 600px;
-  min-width: 300px;
-  background-color: rgb(255, 255, 255);
-  padding: 10px 20px;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
+  min-width: 350px;
   height: auto;
-  border: 3px solid #52402a;
-  margin-bottom: 30px;
-}
-
-.button:hover{
-  scale: 105%;
-}
-
-.button-img {
-  flex-shrink: 0;
-}
-
-.button-img img {
-  width: 50px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 50%;
-  border: 1px solid black;
-  object-fit: contain;
-}
-
-.button-text {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-weight: bold;
-  font-size: 20px;
-  color: #52402a;
-}
-
-.align-map-items h1{
-  text-align: center;
-  margin-top: 10px;
-  font-size: 20px;
-  color: #52402a;
-}
-
-.align-map-items p{
-  margin-bottom: 20px;
-  color: #52402a;
-  font-weight: bold;
-}
-
-#map-p2{
-  font-size: 0.8em;
-}
-
-#map img{
-  margin-top: 20px;
-  margin-bottom: 20px;
-  max-width: 100%;
-  width: 570px;
+  background-color: rgb(224, 215, 204);
   border-radius: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.267);
+  transition: all 0.2s ease-in-out;
+  font-weight: bolder;
+  color: #292015;
+  box-shadow: 5px 5px 0px #634e33;
+  border: 2px solid #634e33;
 }
 
-.align-info-map{
-  position: relative;
+.map-info{
   display: flex;
   flex-direction: row;
 }
 
-.info-map-2{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  left: 70%;
-  top: 15%;
-  border: 1px solid black;
-  width: 15vw;
-  height: 4vw;
-  border-radius: 50px;
-  background-color: #52402a;
+.custom-button:hover{
+  scale: 1.02;
 }
 
-.align-info-map span{
-  text-align: center;
+#map-box{
+  overflow: hidden;
+}
+
+.map-img-container{
+  width: 100%;
+  overflow: hidden;
+}
+
+#map-box img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+#map-box h5{
+  margin-top: 5px;
+  text-align: left;
+}
+
+#map-box p{
+  font-size: small;
+  text-align: left;
+  margin-top: 5px;
+  margin-right: 105px;
+  margin-bottom: 20px;
+}
+
+#map-box span{
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  background-color: #4b3b26;
+  border: solid 1px #292015;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
   color: white;
-  font-size: 1em;
-  font-weight: bolder;
+}
+
+@media (max-width: 600px){
+  #map-box span{
+    width: 150px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  #map-box p{
+    font-size: 11px;
+  }
+
+  #map-box img{
+    transform: scale(1.5);
+  }
 }
