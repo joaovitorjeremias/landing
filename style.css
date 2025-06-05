@@ -20,9 +20,8 @@ a{
 }
 
 .logo-top{
-  display: flex;
-  margin-top: 50px;
-  justify-content: center;
+  margin-top: 30px;
+  justify-self: center;
 }
 
 .logo-top img{
@@ -91,6 +90,21 @@ a{
   color: #292015;
   box-shadow: 5px 5px 0px #634e33;
   border: 2px solid #634e33;
+}
+
+#uber svg{
+  width: 30px;
+  margin-bottom: -9px;
+}
+
+#cat svg{
+  width: 30px;
+  margin-bottom: -3px;
+}
+
+#chat svg{
+  width: 30px;
+  margin-bottom: -7px;
 }
 
 .map-info{
@@ -167,8 +181,23 @@ footer{
     transform: scale(1.5);
   }
 
-  #cat span, #chat span{
+  #cat span, #chat span, #uber span{
     font-size: 0.8em;
+  }
+
+  #uber svg{
+    width: 25px;
+    margin-bottom: -7px;
+  }
+
+  #cat svg{
+    width: 25px;
+    margin-bottom: -4px;
+}
+
+  #chat svg{
+    width: 25px;
+    margin-bottom: -5px;
   }
 
   footer{
